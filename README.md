@@ -1,6 +1,6 @@
 # KinoReverseProxy
 
-**TODO: Add description**
+KinoReverseProxy allows Livebook apps to be accessed on their own domains. It is deployed as a Livebook app, listens for web traffic on an arbitrary port, and provides host-based routing to other deployed Livebook apps using either their Kino.Proxy URL or their port for standalone server processes.
 
 ## Installation
 

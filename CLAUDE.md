@@ -1,5 +1,8 @@
 # CLAUDE.md - Guide for Claude on KinoReverseProxy
 
+## Project Purpose
+KinoReverseProxy allows Livebook apps to be accessed on their own domains. It is deployed as a Livebook app, listens for web traffic on an arbitrary port, and provides host-based routing to other deployed Livebook apps using either their Kino.Proxy URL or their port for standalone server processes.
+
 ## Build and Test Commands
 - Build project: `mix compile`
 - Run all tests: `mix test`
@@ -20,5 +23,3 @@
 - Use specific imports (`import Plug.Conn` rather than `import Plug`)
 - Error handling: log errors and return appropriate HTTP status codes
 - Function specs should be included for public API functions
-
-This project is an Elixir-based reverse proxy system using Plug and the ReverseProxyPlug library.
