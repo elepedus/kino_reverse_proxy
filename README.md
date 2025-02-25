@@ -4,18 +4,79 @@ KinoReverseProxy allows Livebook apps to be accessed on their own domains. It is
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `kino_reverse_proxy` to your list of dependencies in `mix.exs`:
+Add `kino_reverse_proxy` to your dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:kino_reverse_proxy, "~> 0.1.0"}
+    {:kino_reverse_proxy, "~> 0.1.0"},
+    {:bandit, "~> 2.0"}
   ]
 end
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/kino_reverse_proxy>.
+## Usage
+
+### Basic Usage
+
+```elixir
+# Proxy an application from speedrun.dev to localhost:5555
+KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser")
+```
+
+### Custom Port
+
+```elixir
+# Proxy an application from speedrun.dev to localhost:8080
+KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser", port: 8080)
+```
+
+### Custom Timeout
+
+```elixir
+# Set a custom timeout of 60 seconds
+KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser", timeout: 60_000)
+```
+
+### Using HTTPS
+
+```elixir
+# Use HTTPS for the proxy server
+KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser", scheme: :https)
+```
+
+## Manual Configuration
+
+If you need more control over the proxy configuration, you can create your own Bandit server with ReverseProxyPlug:
+
+```elixir
+webserver =
+  {Bandit,
+   plug: {
+     ReverseProxyPlug,
+     upstream: fn
+       %{path_info: []} ->
+         "https://speedrun.dev/proxy/apps/time-guesser"
+
+       %{path_info: ["proxy", "apps", "time-guesser" | _]} ->
+         "https://speedrun.dev/"
+     end,
+     client_options: [
+       timeout: 30000,
+       recv_timeout: 30000,
+       hackney: [
+         timeout: 30000,
+         recv_timeout: 30000,
+         pool: :default
+       ]
+     ]
+   },
+   scheme: :http,
+   thousand_island_options: [
+     read_timeout: 30_000
+   ],
+   port: 5555}
+
+Kino.start_child!(webserver)
+```
 

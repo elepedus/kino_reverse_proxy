@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="thousand_island" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
+      <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
+      <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
+    </SOURCES>
+  </library>
+</component>

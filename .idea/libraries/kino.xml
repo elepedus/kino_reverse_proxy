@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="kino" type="mix">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/kino/lib" />
+      <root url="file://$PROJECT_DIR$/deps/kino/lib" />
+      <root url="file://$PROJECT_DIR$/deps/kino/lib" />
+    </SOURCES>
+  </library>
+</component>
