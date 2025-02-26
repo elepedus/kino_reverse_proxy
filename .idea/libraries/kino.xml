@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/kino/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/kino/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/kino/lib" />
       <root url="file://$PROJECT_DIR$/deps/kino/lib" />
       <root url="file://$PROJECT_DIR$/deps/kino/lib" />
       <root url="file://$PROJECT_DIR$/deps/kino/lib" />

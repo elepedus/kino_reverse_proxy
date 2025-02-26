@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/fss/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/fss/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/fss/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/fss/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/fss/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/fss/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/fss/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/fss/lib" />
       <root url="file://$PROJECT_DIR$/deps/fss/lib" />
       <root url="file://$PROJECT_DIR$/deps/fss/lib" />
       <root url="file://$PROJECT_DIR$/deps/fss/lib" />

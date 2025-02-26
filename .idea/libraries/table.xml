@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/table/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/table/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/table/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/table/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/table/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/table/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/table/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/table/lib" />
       <root url="file://$PROJECT_DIR$/deps/table/lib" />
       <root url="file://$PROJECT_DIR$/deps/table/lib" />
       <root url="file://$PROJECT_DIR$/deps/table/lib" />

@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/bandit/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/bandit/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/bandit/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bandit/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/bandit/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/bandit/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/bandit/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/bandit/lib" />
       <root url="file://$PROJECT_DIR$/deps/bandit/lib" />
       <root url="file://$PROJECT_DIR$/deps/bandit/lib" />
       <root url="file://$PROJECT_DIR$/deps/bandit/lib" />

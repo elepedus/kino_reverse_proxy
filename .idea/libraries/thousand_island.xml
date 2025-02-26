@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/thousand_island/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/thousand_island/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
       <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
       <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />
       <root url="file://$PROJECT_DIR$/deps/thousand_island/lib" />

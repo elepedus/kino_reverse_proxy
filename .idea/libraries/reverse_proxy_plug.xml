@@ -7,9 +7,14 @@
       <root url="file://$PROJECT_DIR$/_build/dev/lib/reverse_proxy_plug/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/reverse_proxy_plug/ebin" />
       <root url="file://$PROJECT_DIR$/_build/dev/lib/reverse_proxy_plug/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/reverse_proxy_plug/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/reverse_proxy_plug/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/dev/lib/reverse_proxy_plug/ebin" />
+      <root url="file://$PROJECT_DIR$/_build/test/lib/reverse_proxy_plug/ebin" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
+      <root url="file://$PROJECT_DIR$/deps/reverse_proxy_plug/lib" />
       <root url="file://$PROJECT_DIR$/deps/reverse_proxy_plug/lib" />
       <root url="file://$PROJECT_DIR$/deps/reverse_proxy_plug/lib" />
       <root url="file://$PROJECT_DIR$/deps/reverse_proxy_plug/lib" />
