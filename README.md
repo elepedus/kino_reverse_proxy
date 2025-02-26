@@ -45,6 +45,28 @@ KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser", timeout: 
 KinoReverseProxy.proxy("https://speedrun.dev/proxy/apps/time-guesser", scheme: :https)
 ```
 
+### Host-Based Routing for Multiple Applications
+
+You can proxy multiple applications using host-based routing:
+
+```elixir
+# Basic host-based routing
+KinoReverseProxy.proxy_hosts(%{
+  "app1.example.com" => "https://speedrun.dev/proxy/apps/app1",
+  "app2.example.com" => "https://speedrun.dev/proxy/apps/app2"
+})
+
+# With custom port and default URL for unknown hosts
+KinoReverseProxy.proxy_hosts(
+  %{
+    "app1.example.com" => "https://speedrun.dev/proxy/apps/app1",
+    "app2.example.com" => "https://speedrun.dev/proxy/apps/app2"
+  },
+  port: 8080,
+  default_url: "https://speedrun.dev/proxy/apps/default-app"
+)
+```
+
 ## Manual Configuration
 
 If you need more control over the proxy configuration, you can create your own Bandit server with ReverseProxyPlug:
