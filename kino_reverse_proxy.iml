@@ -37,6 +37,7 @@
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/httpoison" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/idna" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/kino" />
+      <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/meck" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/metrics" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/mime" />
       <excludeFolder url="file://$MODULE_DIR$/_build/test/lib/mimerl" />
@@ -91,5 +92,50 @@
     <orderEntry type="library" name="httparrot" level="project" />
     <orderEntry type="library" name="cowboy" level="project" />
     <orderEntry type="library" name="earmark" level="project" />
+    <orderEntry type="library" name="meck" level="project" />
+    <orderEntry type="library" name="earmark_parser" level="project" />
+    <orderEntry type="library" name="makeup_elixir" level="project" />
+    <orderEntry type="library" name="makeup_erlang" level="project" />
+    <orderEntry type="library" name="makeup_c" level="project" />
+    <orderEntry type="library" name="makeup_html" level="project" />
+    <orderEntry type="library" name="floki" level="project" />
+    <orderEntry type="library" name="easyhtml" level="project" />
+    <orderEntry type="library" name="finch" level="project" />
+    <orderEntry type="library" name="nimble_csv" level="project" />
+    <orderEntry type="library" name="brotli" level="project" />
+    <orderEntry type="library" name="ezstd" level="project" />
+    <orderEntry type="library" name="aws_signature" level="project" />
+    <orderEntry type="library" name="erlex" level="project" />
+    <orderEntry type="library" name="file_system" level="project" />
+    <orderEntry type="library" name="bunt" level="project" />
+    <orderEntry type="library" name="nimble_parsec" level="project" />
+    <orderEntry type="library" name="temporary_env" level="project" />
+    <orderEntry type="library" name="mock" level="project" />
+    <orderEntry type="library" name="sax_map" level="project" />
+    <orderEntry type="library" name="saxy" level="project" />
+    <orderEntry type="library" name="mox" level="project" />
+    <orderEntry type="library" name="ordinal" level="project" />
+    <orderEntry type="library" name="ibrowse" level="project" />
+    <orderEntry type="library" name="gun" level="project" />
+    <orderEntry type="library" name="mint" level="project" />
+    <orderEntry type="library" name="poison" level="project" />
+    <orderEntry type="library" name="exjsx" level="project" />
+    <orderEntry type="library" name="msgpax" level="project" />
+    <orderEntry type="library" name="fuse" level="project" />
+    <orderEntry type="library" name="opentelemetry_process_propagator" level="project" />
+    <orderEntry type="library" name="inch_ex" level="project" />
+    <orderEntry type="library" name="cowlib" level="project" />
+    <orderEntry type="library" name="ranch" level="project" />
+    <orderEntry type="library" name="plug_cowboy" level="project" />
+    <orderEntry type="library" name="espec" level="project" />
+    <orderEntry type="library" name="makeup" level="project" />
+    <orderEntry type="library" name="unicode_set" level="project" />
+    <orderEntry type="library" name="benchee" level="project" />
+    <orderEntry type="library" name="benchee_markdown" level="project" />
+    <orderEntry type="library" name="nimble_pool" level="project" />
+    <orderEntry type="library" name="nimble_options" level="project" />
+    <orderEntry type="library" name="x509" level="project" />
+    <orderEntry type="library" name="cowboy_telemetry" level="project" />
+    <orderEntry type="library" name="kadabra" level="project" />
   </component>
 </module>

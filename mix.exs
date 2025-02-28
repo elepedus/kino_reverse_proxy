@@ -25,7 +25,8 @@ defmodule KinoReverseProxy.MixProject do
       {:reverse_proxy_plug, "~> 2.3"},
       {:kino, "~> 0.12"},
       {:httpoison, "~> 2.0"},
-      {:meck, "~> 0.9", only: :test}
+      {:meck, "~> 0.9", only: :test},
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
     ]
   end
 end
