@@ -2,6 +2,14 @@
   <library name="hammox" type="mix">
     <CLASSES />
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/hammox/lib" />
+    </SOURCES>
   </library>
 </component>

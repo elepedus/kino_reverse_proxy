@@ -2,6 +2,14 @@
   <library name="bypass" type="mix">
     <CLASSES />
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/bypass/lib" />
+    </SOURCES>
   </library>
 </component>

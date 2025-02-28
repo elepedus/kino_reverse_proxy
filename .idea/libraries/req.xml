@@ -2,6 +2,14 @@
   <library name="req" type="mix">
     <CLASSES />
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/req/lib" />
+    </SOURCES>
   </library>
 </component>

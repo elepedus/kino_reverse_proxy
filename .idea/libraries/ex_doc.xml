@@ -2,6 +2,9 @@
   <library name="ex_doc" type="mix">
     <CLASSES />
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ex_doc/lib" />
+      <root url="file://$PROJECT_DIR$/deps/ex_doc/lib" />
+    </SOURCES>
   </library>
 </component>

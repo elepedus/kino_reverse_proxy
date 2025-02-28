@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="ordinal" type="mix">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/ordinal/lib" />
+    </SOURCES>
+  </library>
+</component>

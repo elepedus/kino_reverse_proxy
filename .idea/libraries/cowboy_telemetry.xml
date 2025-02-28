@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="cowboy_telemetry" type="mix">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/cowboy_telemetry/src" />
+    </SOURCES>
+  </library>
+</component>

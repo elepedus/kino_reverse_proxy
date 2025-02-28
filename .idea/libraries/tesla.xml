@@ -2,6 +2,14 @@
   <library name="tesla" type="mix">
     <CLASSES />
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/tesla/lib" />
+    </SOURCES>
   </library>
 </component>

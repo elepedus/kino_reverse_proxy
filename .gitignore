@@ -21,3 +21,6 @@ kino_reverse_proxy-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+*.iml
+.idea

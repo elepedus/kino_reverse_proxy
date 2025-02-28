@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="nimble_parsec" type="mix">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/nimble_parsec/lib" />
+      <root url="file://$PROJECT_DIR$/deps/nimble_parsec/lib" />
+    </SOURCES>
+  </library>
+</component>

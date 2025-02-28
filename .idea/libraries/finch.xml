@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="finch" type="mix">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+      <root url="file://$PROJECT_DIR$/../../../reverse_proxy_plug/deps/finch/lib" />
+    </SOURCES>
+  </library>
+</component>
