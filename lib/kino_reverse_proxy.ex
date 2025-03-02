@@ -14,25 +14,19 @@ defmodule KinoReverseProxy.HostRouter do
   def call(conn, opts) do
     hosts_map = opts[:hosts_map]
     default_url = opts[:default_url]
-    
+
     # Check if the host is in our map
     case Map.get(hosts_map, conn.host) do
       # Host found, create a ReverseProxyPlug for this host
-      %{url: url, base_url: base_url, path_prefix: path_prefix} ->
+      %{url: url, path_prefix: path_prefix, uri: uri} ->
         # Handle path prefixing like in the original implementation
-        upstream = fn conn ->
-          case conn.path_info do
-            [] -> 
+        upstream = fn
+          %{path_info: path} ->
+            if List.starts_with?(path, path_prefix) do
+              URI.to_string(%{uri| path: nil})
+            else
               url
-            ^path_prefix -> 
-              "https://#{base_url}/"
-            path ->
-              if List.starts_with?(path, path_prefix) do
-                "https://#{base_url}/"
-              else
-                url
-              end
-          end
+            end
         end
         
         proxy_opts = [
@@ -48,19 +42,13 @@ defmodule KinoReverseProxy.HostRouter do
         default_path_prefix = default_uri.path |> String.split("/") |> Enum.filter(&(&1 != ""))
         
         # Use the same path handling logic for consistency
-        upstream = fn conn ->
-          case conn.path_info do
-            [] -> 
+        upstream = fn
+          %{path_info: path} ->
+            if List.starts_with?(path, default_path_prefix) do
+              URI.to_string(%{default_uri| path: nil})
+            else
               default_url
-            ^default_path_prefix -> 
-              "https://#{default_uri.host}/"
-            path ->
-              if List.starts_with?(path, default_path_prefix) do
-                "https://#{default_uri.host}/"
-              else
-                default_url
-              end
-          end
+            end
         end
         
         proxy_opts = [
@@ -140,29 +128,19 @@ defmodule KinoReverseProxy do
     timeout = Keyword.get(options, :timeout, 36_000)
     scheme = Keyword.get(options, :scheme, :http)
     
-    base_url = URI.parse(url).host
-    path_prefix = URI.parse(url).path |> String.split("/") |> Enum.filter(&(&1 != ""))
-    
+    uri = URI.parse(url)
+    path_prefix = uri.path |> String.split("/") |> Enum.filter(&(&1 != ""))
     webserver =
       {Bandit,
        plug: {
          ReverseProxyPlug,
          upstream: fn
-           %{path_info: []} ->
-             url
-
-           %{path_info: ^path_prefix} ->
-             "https://#{base_url}/"
-           
            %{path_info: path} ->
              if List.starts_with?(path, path_prefix) do
-               "https://#{base_url}/"
+               URI.to_string(%{uri| path: nil})
              else
                url
              end
-             
-           _ ->
-             url
          end,
          client_options: [
            timeout: timeout,
@@ -213,7 +191,6 @@ defmodule KinoReverseProxy do
         port: 8080,
         default_url: "https://speedrun.dev/proxy/apps/default-app"
       )
-      
   """
   def proxy_hosts(hosts_map, options \\ []) when is_map(hosts_map) do
     port = Keyword.get(options, :port, 5555)
@@ -229,7 +206,8 @@ defmodule KinoReverseProxy do
         %{
           url: url, 
           base_url: uri.host,
-          path_prefix: uri.path |> String.split("/") |> Enum.filter(&(&1 != ""))
+          path_prefix: uri.path |> String.split("/") |> Enum.filter(&(&1 != "")),
+          uri: uri
         }
       }
     end) |> Map.new()
